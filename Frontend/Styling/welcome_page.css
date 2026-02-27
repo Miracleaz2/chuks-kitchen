@@ -1,0 +1,438 @@
+:root {
+  --bg: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+
+  --orange: #f47b20;
+  --orange-dark: #e86e16;
+
+  --blue: #2f7cf6;
+
+  --chip-bg: #f6f6f6;
+  --border: #e5e7eb;
+
+  --footer: #5b3a2c; /* warm brown */
+  --footer-text: #f5f1ee;
+
+  --radius: 10px;
+  --shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  background: var(--bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  min-height: 72vh;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: stretch;
+}
+
+/* Left hero image panel */
+.hero__media {
+  min-height: 520px;      /* same height feel as the design */
+  height: 100%;
+  overflow: hidden;       /* important: hides the cropped parts */
+}
+
+/* The image itself */
+.hero__img {
+  width: 100%;
+  height: 100%;
+  display: block;         /* removes small gaps under images */
+  object-fit: cover;      /* fills the box, crops instead of stretching */
+  object-position: center; /* change to 'center left' if you want more of the left side */
+  transform: scale(1.3);  /* zoom the image 20% larger */
+}
+
+.hero__panel {
+  background: #fff;
+  padding: 32px 40px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.panel__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  font-family: "Segoe Script", "Brush Script MT", cursive;
+  color: var(--orange);
+  font-size: 22px;
+  letter-spacing: 0.2px;
+}
+
+.brand--footer {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.panel__content {
+  margin-top: 40px;
+  max-width: 520px;
+  margin-top:30%;
+  margin-bottom: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+
+.lead {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+  max-width: 52ch;
+}
+
+.chips {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 50px;
+  margin: 16px 0 18px;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--chip-bg);
+  border: 1px solid #f0f0f0;
+}
+
+.chip__icon {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(244, 123, 32, 0.14);
+  color: var(--orange);
+  font-size: 14px;
+}
+
+.chip__text {
+  font-size: 12px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.cta {
+  display: grid;
+  gap: 31px;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  border: 1px solid transparent;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn--sm {
+  height: 34px;
+  padding: 0 14px;
+  font-size: 12px;
+}
+
+.btn--lg {
+  height: 44px;
+  padding: 0 16px;
+  font-size: 12px;
+}
+
+.btn--primary {
+  background: var(--orange);
+  color: white;
+  box-shadow: 0 8px 18px rgba(244, 123, 32, 0.25);
+}
+
+.btn--primary:hover {
+  background: var(--orange-dark);
+  text-decoration: none;
+}
+
+.btn--outline {
+  background: white;
+  color: var(--blue);
+  border-color: rgba(47, 124, 246, 0.65);
+}
+
+.btn--outline:hover {
+  text-decoration: none;
+  box-shadow: 0 10px 22px rgba(47, 124, 246, 0.12);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.legal {
+  margin-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  align-items: center;
+  font-size: 11px;
+  color: #9ca3af;
+  margin-left: 21%;
+}
+
+.legal a {
+  color: var(--blue);
+}
+
+.footer {
+  background: var(--footer);
+  color: var(--footer-text);
+  padding: 34px 22px;
+}
+
+.footer__inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.35fr 0.75fr 1fr 0.75fr;
+  gap: 30px;
+}
+
+.footer h2 {
+  font-size: 17px;
+  letter-spacing: 0.4px;
+  margin: 4px 0 12px;
+  color: #ffffff;
+}
+
+.footer p {
+  margin: 0 0 14px;
+  color: rgba(245, 241, 238, 0.9);
+  font-size: 12px;
+  line-height: 1.6;
+  max-width: 36ch;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.footer a {
+  color: rgba(245, 241, 238, 0.92);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .plain li {
+  font-size: 12px;
+  color: rgba(245, 241, 238, 0.92);
+}
+
+.muted {
+  color: rgba(245, 241, 238, 0.7);
+}
+
+/* Floating controls */
+.float {
+  position: fixed;
+  right: 18px;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+}
+
+.float--badge {
+  bottom: 64px;
+  right: 72px;
+  width: 46px;
+  height: 46px;
+}
+
+
+
+.float--top {
+  bottom: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: #1f7aec;
+  color: #ffffff;
+  font-weight: 900;
+  box-shadow: var(--shadow);
+}
+
+.float--top:hover {
+  text-decoration: none;
+  filter: brightness(1.05);
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__media {
+    min-height: 320px;
+  }
+
+  .hero__panel {
+    padding: 24px 18px;
+  }
+
+  .panel__content {
+    margin-top: 22px;
+  }
+
+  .footer__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .float--badge {
+    right: 18px;
+    bottom: 64px;
+  }
+}
+
+@media (max-width: 520px) {
+  .chips {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- MOBILE WELCOME  ---------- */
+@media (max-width: 520px) {
+  /* 1 column */
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  /* Image banner on top */
+  .hero__media {
+    min-height: 200px;
+    height: 200px;
+  }
+
+  /* Crop for the new mobile food image */
+  .hero__img {
+    transform: scale(1);          /* no heavy zoom on mobile */
+    object-fit: cover;
+    object-position: 50% 55%;     /* move focus slightly down */
+  }
+
+  /* Right panel spacing */
+  .hero__panel {
+    padding: 18px 16px 18px;
+  }
+
+  /* Put Sign In at the top-right */
+  .panel__top {
+    justify-content: flex-end;
+    margin-bottom: 16px; /* space between Sign In and logo */
+  }
+
+  /* Center logo below Sign In, with extra spacing */
+  .brand {
+    display: block;
+    text-align: center;
+    margin: 14px 0 8px; /* controls space between Sign In and brand */
+    font-size: 22px;
+  }
+
+  /* Center the content */
+  .panel__content {
+    margin-top: 0;
+    max-width: none;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 26px;
+    line-height: 1.2;
+    margin: 0 0 10px;
+  }
+
+  .lead {
+    margin: 0 auto 14px;
+    font-size: 12px;
+  }
+
+  /* Chips: single column, 10px gaps */
+  .chips {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 14px 0 16px;
+  }
+
+  .chip {
+    text-align: left;
+  }
+
+  /* Buttons stacked */
+  .cta {
+    gap: 12px;
+    margin-top: 8px;
+  }
+
+  /* No footer on mobile */
+  .footer {
+    display: none;
+  }
+}

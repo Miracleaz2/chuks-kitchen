@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chuks Kitchen — Sign In</title>
+    <link rel="stylesheet" href="../Frontend/Styling/sign_in.css" />
+  </head>
+
+  <body>
+    <header class="hero hero--signin" aria-label="Sign in">
+      <!-- Left image with orange overlay + text -->
+      <div class="hero__media hero__media--overlay">
+  <img class="hero__img" src="../Frontend/Images/hero.jpg.png" alt="People enjoying Nigerian food together" />
+        <div class="overlay">
+          <div class="overlay__content">
+            <h1 class="overlay__title">Chuks Kitchen</h1>
+            <p class="overlay__text">
+              Your journey to delicious, authentic Nigerian meals starts here. Sign up or log in to order
+              your favorites today!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right panel with centered login card -->
+      <div class="auth">
+  <div class="auth__card">
+    <div class="auth__brand">Chuks Kitchen</div>
+    <h2 class="auth__title">Login your Account</h2>
+
+    <form class="auth__form" action="#" method="post">
+      <!-- Email -->
+      <label class="field">
+        <span class="field__control">
+          <span class="field__icon" aria-hidden="true">
+            <!-- envelope -->
+            <svg viewBox="0 0 24 24" class="icon" fill="none">
+              <path
+                d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5v-9Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+              <path
+                d="M6.5 7.5 12 12l5.5-4.5"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+
+          <input type="text" name="email" placeholder="name@gmail.com" />
+        </span>
+      </label>
+
+      <!-- Password -->
+      <label class="field">
+        <span class="field__control field__control--password">
+          <span class="field__icon" aria-hidden="true">
+            <!-- lock -->
+            <svg viewBox="0 0 24 24" class="icon" fill="none">
+              <path
+                d="M7.5 11V8.8A4.5 4.5 0 0 1 12 4.3a4.5 4.5 0 0 1 4.5 4.5V11"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+              <path
+                d="M7.2 11h9.6A2.2 2.2 0 0 1 19 13.2v5.6A2.2 2.2 0 0 1 16.8 21H7.2A2.2 2.2 0 0 1 5 18.8v-5.6A2.2 2.2 0 0 1 7.2 11Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+            </svg>
+          </span>
+
+          <input type="password" name="password" placeholder="******" />
+
+          <button class="icon-btn" type="button" aria-label="Hide password">
+            <!-- eye off -->
+            <svg viewBox="0 0 24 24" class="icon" fill="none">
+              <path
+                d="M3 12s3.5-7 9-7 9 7 9 7-3.5 7-9 7-9-7-9-7Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+              <path
+                d="M9.5 9.5a3.5 3.5 0 0 0 5 5"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+              <path
+                d="M4 4l16 16"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </span>
+      </label>
+
+      <div class="auth__row">
+        <span></span>
+        <a class="auth__link" href="#forgot">Forgot Password?</a>
+      </div>
+
+      <a href="home.html" class="btn btn--primary btn--lg btn--full">Continue</a>
+
+      <div class="divider"><span>Or continue with</span></div>
+
+      <button class="btn btn--social btn--lg btn--full" type="button">
+        <span class="social-icon" aria-hidden="true">
+          <!-- Google G (approx) -->
+          <svg viewBox="0 0 24 24" class="g-icon">
+            <path
+              d="M12 10.2v3.9h5.4c-.2 1.2-1.5 3.6-5.4 3.6A6.2 6.2 0 1 1 12 5.8c1.8 0 3 .7 3.7 1.3l2.5-2.4C16.7 3.3 14.6 2.4 12 2.4 6.9 2.4 2.8 6.5 2.8 11.6S6.9 20.8 12 20.8c6.4 0 8-4.5 8-6.8 0-.5-.1-1-.2-1.4H12Z"
+              fill="#1A73E8"
+            />
+            <path
+              d="M4.3 8.6l3.2 2.3C8.3 8.9 10 7.6 12 7.6c1.1 0 2.1.4 2.9 1l2.4-2.3C16.0 5.0 14.1 4.2 12 4.2c-3.3 0-6.1 1.9-7.7 4.4Z"
+              fill="#EA4335"
+              opacity=".95"
+            />
+            <path
+              d="M12 19c2.9 0 5.4-1.6 6.7-3.9l-3.2-2.5c-.8 1.9-2.5 3.2-4.5 3.2-2 0-3.8-1.3-4.6-3.1l-3.2 2.5C4.7 17.4 8.0 19 12 19Z"
+              fill="#34A853"
+              opacity=".95"
+            />
+            <path
+              d="M6.4 12.7a4.9 4.9 0 0 1 0-2.2L3.2 8.1A8.2 8.2 0 0 0 3.2 15l3.2-2.3Z"
+              fill="#FBBC05"
+              opacity=".95"
+            />
+          </svg>
+        </span>
+        Continue with Google
+      </button>
+
+      <button class="btn btn--social btn--lg btn--full" type="button">
+        <span class="social-icon" aria-hidden="true">
+          <!-- Facebook "f" -->
+          <svg viewBox="0 0 24 24" class="fb-icon">
+            <path
+              d="M14 8.5V7.2c0-.8.5-1 1-1h1.7V3.7h-2.3c-2.6 0-3.9 1.6-3.9 3.8v1H8.7V11h1.8v9h3V11h2.1l.4-2.5H13.5Z"
+              fill="#1877F2"
+            />
+          </svg>
+        </span>
+        Continue with Facebook
+      </button>
+
+      <p class="auth__bottom">
+        Don’t have an account?
+        <a class="auth__link" href="sign-up.html">Create an account</a>
+      </p>
+    </form>
+  </div>
+</div>
+    </header>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <section class="footer__col footer__brand">
+          <div class="brand brand--footer">Chuks Kitchen</div>
+          <p>
+            Bringing the authentic flavors of Nigerian home cooking to your table, with passion and care.
+          </p>
+          <small class="muted">© 2024 Chuks Kitchen. All rights reserved.</small>
+        </section>
+
+        <nav class="footer__col" aria-label="Quick links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#orders">My Order</a></li>
+            <li><a href="#account">Account</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <section class="footer__col" aria-label="Contact us">
+          <h2>Contact Us</h2>
+          <ul class="plain">
+            <li>+234 801 234 5678</li>
+            <li>hello@chukskitchen.com</li>
+            <li>123 Torto Street, Lagos, Nigeria</li>
+          </ul>
+        </section>
+
+        <nav class="footer__col" aria-label="Social links">
+          <h2>Social</h2>
+          <ul>
+            <li><a href="#facebook">Facebook</a></li>
+            <li><a href="#twitter">Twitter</a></li>
+            <li><a href="#linkedin">LinkedIn</a></li>
+            <li><a href="#instagram">Instagram</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <a class="float float--top" href="#top" aria-label="Back to top">↑</a>
+  </body>
+</html>
