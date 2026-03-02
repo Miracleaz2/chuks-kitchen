@@ -8,10 +8,12 @@ A responsive frontend prototype for **Chuks Kitchen**, built with HTML and CSS (
 - Frontend/sign_in.html – sign-in page
 - Frontend/sign-up.html – sign-up page
 - Frontend/home.html – main home page
+- Frontend/explore.html – explore/browse page
 - Frontend/Styling/welcome_page.css – welcome page styles
 - Frontend/Styling/sign_in.css – sign-in page styles
 - Frontend/Styling/sign-up.css – sign-up page styles
 - Frontend/Styling/home.css – home page styles
+- Frontend/Styling/explore.css – explore page styles
 - Frontend/Images/ – image assets used across pages
 
 ## Features Implemented
@@ -19,6 +21,9 @@ A responsive frontend prototype for **Chuks Kitchen**, built with HTML and CSS (
 - Page-to-page navigation (welcome → sign in → home)
 - Responsive layout for desktop and mobile
 - Styled authentication pages (sign in and sign up)
+- Welcome page UI refinements:
+  - Hero image zoom/crop tuning for stronger visual focus
+  - Legal links section spacing adjusted to sit lower near the footer area
 - Sign-up form behavior:
   - Continue button controlled by checkbox agreement
   - Password visibility toggle
@@ -34,7 +39,10 @@ A responsive frontend prototype for **Chuks Kitchen**, built with HTML and CSS (
 
 1. Open the project folder in VS Code.
 2. Open any HTML file in the `Frontend` folder.
-3. Launch with Live Server (recommended) or open directly in a browser.
+3. Preview options:
+  - Live Server (opens in external browser)
+  - Live Preview extension (opens inside VS Code)
+  - Or open directly in a browser
 
 ## Notes
 

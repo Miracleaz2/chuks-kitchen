@@ -12,13 +12,29 @@
     <nav class="navbar">
       <div class="navbar__inner">
         <div class="navbar__brand">Chuks Kitchen</div>
-        <ul class="navbar__menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#explore">Explore</a></li>
+
+        <button
+          class="navbar__toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="navbar__menu" id="mobileMenu">
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="explore.html">Explore</a></li>
           <li><a href="#orders">My Orders</a></li>
           <li><a href="#account">Account</a></li>
+          <li class="navbar__menu-cta"><a class="btn btn--outline btn--sm" href="sign_in.html">Login</a></li>
         </ul>
-        <a class="btn btn--outline btn--sm" href="sign_in.html">Login</a>
+
+        <!-- keep your desktop login button if you want it on desktop -->
+        <a class="btn btn--outline btn--sm navbar__login" href="sign_in.html">Login</a>
       </div>
     </nav>
 
@@ -207,5 +223,28 @@
     </footer>
 
     <a class="float float--top" href="#top" aria-label="Back to top">↑</a>
+
+    <script>
+      (function () {
+        const navbar = document.querySelector(".navbar");
+        const toggle = document.querySelector(".navbar__toggle");
+        const menu = document.querySelector("#mobileMenu");
+
+        if (!navbar || !toggle || !menu) return;
+
+        toggle.addEventListener("click", () => {
+          const isOpen = navbar.classList.toggle("is-open");
+          toggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        // close when a link is clicked
+        menu.querySelectorAll("a").forEach((a) => {
+          a.addEventListener("click", () => {
+            navbar.classList.remove("is-open");
+            toggle.setAttribute("aria-expanded", "false");
+          });
+        });
+      })();
+    </script>
   </body>
 </html>

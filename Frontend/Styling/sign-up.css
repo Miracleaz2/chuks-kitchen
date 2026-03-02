@@ -523,3 +523,30 @@ body {
     font-size: 18px;
   }
 }
+
+/* FLOAT BUTTON */
+.float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f47b20;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(255, 122, 24, 0.4);
+  transition: all 200ms ease;
+  z-index: 50;
+  text-decoration: none;
+}
+
+.float:hover {
+  background: #e86e16;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(255, 122, 24, 0.5);
+}

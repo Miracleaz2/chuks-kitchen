@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chuks Kitchen — Explore</title>
+    <link rel="stylesheet" href="../Frontend/Styling/explore.css" />
+  </head>
+
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <div class="navbar__inner">
+        <div class="navbar__brand">Chuks Kitchen</div>
+
+        <button
+          class="navbar__toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="navbar__menu" id="mobileMenu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="explore.html" class="active">Explore</a></li>
+          <li><a href="#orders">My Orders</a></li>
+          <li><a href="#account">Account</a></li>
+          <li class="navbar__menu-cta"><a class="btn btn--outline btn--sm" href="sign_in.html">Login</a></li>
+        </ul>
+
+        <!-- keep your desktop login button if you want it on desktop -->
+        <a class="btn btn--outline btn--sm navbar__login" href="sign_in.html">Login</a>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" aria-label="Explore Menu">
+      <div class="hero__background">
+        <img src="..//Frontend/Images/footer_food.png.png" alt="Nigerian food spread" />
+      </div>
+      <div class="hero__overlay">
+        <div class="hero__content">
+          <h1 class="hero__title">Chuks Kitchen</h1>
+          <p class="hero__subtitle">Chuks Kitchen Nigerian Home Cooking 4.8 (1.2k)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <div class="container">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+          <h2 class="sidebar__title">Menu Categories</h2>
+          <nav class="category-nav">
+            <a href="#popular" class="category-nav__item active">Popular</a>
+            <a href="#jollof" class="category-nav__item">Jollof Rice & Entrees</a>
+            <a href="#swallow" class="category-nav__item">Swallow & Soups</a>
+            <a href="#grills" class="category-nav__item">Grills & sides</a>
+            <a href="#beverages" class="category-nav__item">Beverages</a>
+            <a href="#desserts" class="category-nav__item">Desserts</a>
+          </nav>
+        </aside>
+
+        <!-- MENU SECTIONS -->
+        <div class="menu-sections">
+          <!-- POPULAR SECTION -->
+          <section id="popular" class="menu-section">
+            <h2 class="menu-section__title">Popular</h2>
+            <div class="menu-grid">
+              <div class="menu-card">
+                <img src="../Frontend/Images/explore.png" alt="Jollof Rice & Fried Chicken" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Jollof Rice & Fried Chicken</h3>
+                  <p class="menu-card__description">Our signature Jollof rice, served with crispy fried chicken and plantain.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦3,500</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/explore1.png" alt="Eba & Egusi Soup (Goat Meat)" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Eba & Egusi Soup (Goat Meat)</h3>
+                  <p class="menu-card__description">Hearty Egusi soup with fresh goat meat, served with soft Eba.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦4,500</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/explore3.png" alt="Pounded Yam & Edikaikong" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Pounded Yam & Edikaikong</h3>
+                  <p class="menu-card__description">Traditional pounded yam with rich, leafy Edikaikong soup.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦5,800</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/explore3.png" alt="Peppered Snail" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Peppered Snail</h3>
+                  <p class="menu-card__description">Spicy and savory peppered snail, perfect as a starter.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦2,500</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/explore4.png" alt="Grilled Tilapia Fish" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Grilled Tilapia Fish</h3>
+                  <p class="menu-card__description">Whole grilled tilapia fish with our special spices.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦4,500</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/explore5.png" alt="Jollof Rice & Fried Chicken" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Jollof Rice & Fried Chicken</h3>
+                  <p class="menu-card__description">Our signature Jollof rice, served with crispy fried chicken and plantain.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦3,500</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="view-all-btn" data-section="popular">View All Categories</button>
+          </section>
+
+          <!-- JOLLOF RICE & ENTREES SECTION -->
+          <section id="jollof" class="menu-section">
+            <h2 class="menu-section__title">Jollof Rice & Entrees</h2>
+            <div class="menu-grid">
+              <div class="menu-card">
+                <img src="../Frontend/Images/explore6.png" alt="Jollof Rice & Smoked Fish" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Jollof Rice & Smoked Fish</h3>
+                  <p class="menu-card__description">Flavorful jollof rice served with perfectly smoked fish.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦3,500</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/explore7.png" alt="Party Jollof Rice (Veg)" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Party Jollof Rice (Veg)</h3>
+                  <p class="menu-card__description">Vegetarian party jollof, full of rich flavors.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦2,800</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/explore9.png" alt="Party Jollof Rice (Veg)" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Party Jollof Rice (Veg)</h3>
+                  <p class="menu-card__description">Vegetarian party jollof, full of rich flavors.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦3,500</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="view-all-btn" data-section="jollof">View All Categories</button>
+          </section>
+
+          <!-- SWALLOW & SOUPS SECTION -->
+          <section id="swallow" class="menu-section">
+            <h2 class="menu-section__title">Swallow & Soups</h2>
+            <div class="menu-grid">
+              <div class="menu-card">
+                <img src="../Frontend/Images/explore9.png" alt="Amala with Gbegiri & Ewedu" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Amala with Gbegiri & Ewedu</h3>
+                  <p class="menu-card__description">Classic Amala served with Gbegiri (beans) and Ewedu (jute leaf) soup.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦3,500</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/food2.png.png" alt="Fufu & Okra Soup (Fish)" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Fufu & Okra Soup (Fish)</h3>
+                  <p class="menu-card__description">Light Fufu served with fresh okra soup and tilapia fish.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦3,500</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/food3.png.png" alt="Fufu & Okra Soup (Fish)" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Fufu & Okra Soup (Fish)</h3>
+                  <p class="menu-card__description">Light Fufu served with fresh okra soup and tilapia fish.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦3,500</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="view-all-btn" data-section="swallow">View All Categories</button>
+          </section>
+
+          <!-- GRILLS & SIDES SECTION -->
+          <section id="grills" class="menu-section">
+            <h2 class="menu-section__title">Grills & sides</h2>
+            <div class="menu-grid">
+              <div class="menu-card">
+                <img src="../Frontend/Images/explore1.png" alt="Grilled Chicken Thighs" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Grilled Chicken Thighs</h3>
+                  <p class="menu-card__description">Succulent chicken thighs grilled with aromatic spices.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦3,500</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/explore2.png" alt="Suya (Meat Skewers)" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Suya (Meat Skewers)</h3>
+                  <p class="menu-card__description">Spicy grilled beef skewers coated with peanut seasoning.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦2,800</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/explore3.png" alt="Fried Plantains" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Fried Plantains</h3>
+                  <p class="menu-card__description">Golden crispy plantains, a perfect side dish.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦1,500</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/explore4.png" alt="Coleslaw" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Coleslaw</h3>
+                  <p class="menu-card__description">Fresh and tangy coleslaw salad.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦1,200</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/explore5.png" alt="Garlic Bread" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Garlic Bread</h3>
+                  <p class="menu-card__description">Crispy bread spread with garlic butter.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦1,800</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/explore6.png" alt="Mixed Vegetables" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Mixed Vegetables</h3>
+                  <p class="menu-card__description">Assorted grilled and steamed vegetables.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦1,500</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            <button class="view-all-btn" data-section="grills">View All Categories</button>
+            </div>
+          </section>
+
+          <!-- BEVERAGES SECTION -->
+          <section id="beverages" class="menu-section">
+            <h2 class="menu-section__title">Beverages</h2>
+            <div class="menu-grid">
+              <div class="menu-card">
+                <img src="../Frontend/Images/explore7.png" alt="Fresh Orange Juice" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Fresh Orange Juice</h3>
+                  <p class="menu-card__description">Freshly squeezed orange juice, chilled.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦800</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/explore8.png" alt="Ginger Ale" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Ginger Ale</h3>
+                  <p class="menu-card__description">Refreshing ginger ale drink.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦1,000</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/explore9.png" alt="Zobo Drink" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Zobo Drink</h3>
+                  <p class="menu-card__description">Traditional hibiscus flower drink, chilled.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦900</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/food8.png.png" alt="Mango Smoothie" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Mango Smoothie</h3>
+                  <p class="menu-card__description">Creamy mango smoothie blended fresh.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦1,200</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/food9.png.png" alt="Iced Coffee" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Iced Coffee</h3>
+                  <p class="menu-card__description">Cold, smooth iced coffee.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦1,100</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/food10.png.png" alt="Lemon Water" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Lemon Water</h3>
+                  <p class="menu-card__description">Fresh lemon infused water.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦600</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="view-all-btn" data-section="beverages">View All Categories</button>
+          </section>
+
+          <!-- DESSERTS SECTION -->
+          <section id="desserts" class="menu-section">
+            <h2 class="menu-section__title">Desserts</h2>
+            <div class="menu-grid">
+              <div class="menu-card">
+                <img src="../Frontend/Images/food.png.png" alt="Chocolate Cake" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Chocolate Cake</h3>
+                  <p class="menu-card__description">Rich and decadent chocolate cake slice.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦2,000</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/food1.png.png" alt="Cheesecake" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Cheesecake</h3>
+                  <p class="menu-card__description">Smooth and creamy New York cheesecake.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦2,200</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/food2.png.png" alt="Carrot Cake" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Carrot Cake</h3>
+                  <p class="menu-card__description">Moist carrot cake with cream cheese frosting.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦1,800</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/food3.png.png" alt="Fruit Tart" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Fruit Tart</h3>
+                  <p class="menu-card__description">Fresh fruit topped custard tart.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦2,500</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/food4.png.png" alt="Brownie" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Brownie</h3>
+                  <p class="menu-card__description">Fudgy chocolate brownie.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦1,500</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-card">
+                <img src="../Frontend/Images/food5.png.png" alt="Vanilla Ice Cream" class="menu-card__image" />
+                <div class="menu-card__content">
+                  <h3 class="menu-card__title">Vanilla Ice Cream</h3>
+                  <p class="menu-card__description">Creamy vanilla ice cream scoop.</p>
+                  <div class="menu-card__footer">
+                    <span class="menu-card__price">₦1,200</span>
+                    <button class="btn-add" aria-label="Add to cart">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3v10M3 8h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>            <button class="view-all-btn" data-section="desserts">View All Categories</button>          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <section class="footer__col" aria-label="About us">
+          <div class="brand brand--footer">Chuks Kitchen</div>
+          <p>
+            Bringing the authentic flavors of Nigerian home cooking to your table, with passion and care.
+          </p>
+          <small class="muted">© 2024 Chuks Kitchen. All rights reserved.</small>
+        </section>
+
+        <nav class="footer__col" aria-label="Quick links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="#orders">My Order</a></li>
+            <li><a href="#account">Account</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <section class="footer__col" aria-label="Contact us">
+          <h2>Contact Us</h2>
+          <ul class="plain">
+            <li>+234 801 234 5678</li>
+            <li>hello@chukskitchen.com</li>
+            <li>123 Torto Street, Lagos, Nigeria</li>
+          </ul>
+        </section>
+
+        <nav class="footer__col" aria-label="Social links">
+          <h2>Social</h2>
+          <ul>
+            <li><a href="#facebook">Facebook</a></li>
+            <li><a href="#twitter">Twitter</a></li>
+            <li><a href="#linkedin">LinkedIn</a></li>
+            <li><a href="#instagram">Instagram</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <a class="float float--top" href="#top" aria-label="Back to top">↑</a>
+
+    <script>
+      (function () {
+        const navbar = document.querySelector(".navbar");
+        const toggle = document.querySelector(".navbar__toggle");
+        const menu = document.querySelector("#mobileMenu");
+
+        if (!navbar || !toggle || !menu) return;
+
+        toggle.addEventListener("click", () => {
+          const isOpen = navbar.classList.toggle("is-open");
+          toggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        // close when a link is clicked
+        menu.querySelectorAll("a").forEach((a) => {
+          a.addEventListener("click", () => {
+            navbar.classList.remove("is-open");
+            toggle.setAttribute("aria-expanded", "false");
+          });
+        });
+      })();
+
+      // Active category navigation
+      const categoryLinks = document.querySelectorAll('.category-nav__item');
+      categoryLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          categoryLinks.forEach(l => l.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+
+      // Collapse/Expand menu sections on mobile
+      const viewAllButtons = document.querySelectorAll('.view-all-btn');
+      const menuGrids = document.querySelectorAll('.menu-grid');
+
+      // Initialize collapsed state on mobile
+      function initializeMenuState() {
+        const isMobile = window.innerWidth <= 480;
+        if (isMobile) {
+          menuGrids.forEach(grid => {
+            grid.classList.add('collapsed');
+          });
+        } else {
+          menuGrids.forEach(grid => {
+            grid.classList.remove('collapsed');
+          });
+        }
+      }
+
+      // Initialize on load
+      initializeMenuState();
+
+      // Re-initialize on resize
+      window.addEventListener('resize', initializeMenuState);
+
+      // Handle View All button clicks
+      viewAllButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const sectionId = this.getAttribute('data-section');
+          const section = document.getElementById(sectionId);
+          const grid = section.querySelector('.menu-grid');
+          
+          if (grid.classList.contains('collapsed')) {
+            grid.classList.remove('collapsed');
+            this.textContent = 'Show Less';
+          } else {
+            grid.classList.add('collapsed');
+            this.textContent = 'View All Categories';
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
