@@ -69,7 +69,7 @@ public class SearchSortPanel extends JPanel {
 
         gbc.gridx = 6;
         JButton searchBtn = new JButton("Search");
-        searchBtn.setToolTipText("Search the library catalogue");
+        searchBtn.setToolTipText("Search the library catalog");
         searchBtn.addActionListener(e -> performSearch());
         topPanel.add(searchBtn, gbc);
 
