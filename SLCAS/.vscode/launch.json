@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Run SLCAS",
+            "request": "launch",
+            "mainClass": "gui.MainWindow",
+            "projectName": "SLCAS",
+            "args": ["data"],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "java",
+            "name": "Debug SLCAS",
+            "request": "launch",
+            "mainClass": "gui.MainWindow",
+            "projectName": "SLCAS",
+            "args": ["data"],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

@@ -28,7 +28,49 @@ SLCAS/
   Makefile
 ```
 
-## Build & Run
+## Running in VS Code (Recommended)
+
+### Prerequisites
+1. Install **Java 8 or later** – download from [https://adoptium.net](https://adoptium.net)
+2. Install **VS Code** – download from [https://code.visualstudio.com](https://code.visualstudio.com)
+3. Install the **Extension Pack for Java** in VS Code:
+   - Open VS Code → press `Ctrl+Shift+X` (Extensions)
+   - Search for **"Extension Pack for Java"** (by Microsoft)
+   - Click **Install**
+
+### Opening the Project
+1. In VS Code, choose **File → Open Folder…**
+2. Navigate to and select the **`SLCAS`** folder (not the root of the repo)
+3. VS Code will automatically detect the Java source files
+
+### Running the App — Option A: Play Button (Easiest)
+1. Open **`src/gui/MainWindow.java`** in the editor
+2. Click the **▷ Run** button that appears above the `main` method
+   *(or press `F5` to run with debugging)*
+
+### Running the App — Option B: Run & Debug Panel
+1. Press `Ctrl+Shift+D` to open the **Run and Debug** panel
+2. Select **"Run SLCAS"** from the dropdown at the top
+3. Click the green **▷** button (or press `F5`)
+
+### Running the App — Option C: Terminal Task
+1. Press `Ctrl+Shift+B` to run the default **build task** (compiles the project)
+2. Then open a terminal (`Ctrl+\``) and run:
+   ```
+   java -cp bin gui.MainWindow data
+   ```
+
+### Keyboard Shortcuts Summary
+| Action | Shortcut |
+|--------|----------|
+| Run without debugging | `Ctrl+F5` |
+| Run with debugging | `F5` |
+| Build (compile) | `Ctrl+Shift+B` |
+| Open terminal | `` Ctrl+` `` |
+
+---
+
+## Build & Run (Command Line / Terminal)
 
 ```bash
 cd SLCAS

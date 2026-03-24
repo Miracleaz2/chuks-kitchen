@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile SLCAS",
+            "type": "shell",
+            "command": "mkdir -p bin && javac -d bin -sourcepath src $(find src -name '*.java')",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": "$javac"
+        },
+        {
+            "label": "Run SLCAS",
+            "type": "shell",
+            "command": "java -cp bin gui.MainWindow data",
+            "group": "test",
+            "dependsOn": "Compile SLCAS",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean SLCAS",
+            "type": "shell",
+            "command": "rm -rf bin",
+            "group": "none",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
